@@ -1,0 +1,162 @@
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--sidebar-text);
+  letter-spacing: 0.06em;
+}
+
+.sidebar-header-counter {
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 999px;
+  background-color: var(--primary);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+
+.sidebar-add-pdf {
+  background: none;
+  border: none;
+  color: var(--sidebar-muted);
+  font-size: 14px;
+  padding: 8px 0;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
+.sidebar-add-pdf:hover:not(:disabled) {
+  color: var(--sidebar-text);
+}
+
+.sidebar-add-pdf:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.contract-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  padding-right: 4px;
+}
+
+.contract-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 8px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.contract-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contract-item--failed .contract-item__meta {
+  color: #f87171;
+}
+
+.contract-item__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  text-align: left;
+}
+
+.contract-item__code {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--sidebar-text);
+}
+
+.contract-item__meta {
+  font-size: 12px;
+  color: var(--sidebar-muted);
+}
+
+.contract-item__delete {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--sidebar-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  font-family: inherit;
+}
+
+.contract-item__delete:hover {
+  color: var(--sidebar-text);
+}
+
+.sidebar-hint,
+.sidebar-empty {
+  font-size: 13px;
+  color: var(--sidebar-muted);
+  text-align: left;
+  margin: 0;
+}
+
+.sidebar-error {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: #fecaca;
+  background: rgba(127, 29, 29, 0.35);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.sidebar-error button {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--sidebar-text);
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: inherit;
+}
