@@ -35,10 +35,5 @@ Chat (SSE):
 
 ## Docker
 
-Build da imagem estática + nginx (proxy `/api` → serviço `backend:8000` no compose):
-
-```bash
-docker build -t assistente-contratos-web --build-arg VITE_API_URL= .
-```
-
-No `docker-compose` futuro, exponha a porta 80 do serviço `frontend` e defina o serviço backend com hostname `backend`.
+Build da imagem estática + nginx (proxy `/api` → serviço `backend:8000` no compose do projeto principal):
+ 

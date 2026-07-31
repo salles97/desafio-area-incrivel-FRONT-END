@@ -2,7 +2,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 100svh;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
   background: var(--chat-bg);
   padding: 24px 32px 20px;
   box-sizing: border-box;
@@ -58,7 +60,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 8px 0 16px;
+  padding: 8px 0 16px;  
+  scrollbar-width: none;
 }
 
 .message-row {
@@ -94,6 +97,10 @@
   background: var(--user-bubble);
   color: #fff;
   border-bottom-right-radius: 4px;
+}
+
+.message-bubble--user p {
+  color: #fff;
 }
 
 .message-bubble--assistant {

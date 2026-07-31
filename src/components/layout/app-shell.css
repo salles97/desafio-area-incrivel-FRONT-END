@@ -1,14 +1,17 @@
 .app-shell {
   display: flex;
-  min-height: 100svh;
+  height: 100%;
   width: 100%;
+  overflow: hidden;
   text-align: left;
   background: var(--chat-bg);
 }
 
 .app-shell__sidebar {
   flex: 0 0 260px;
-  min-height: 100svh;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +19,9 @@
 .app-shell__main {
   flex: 1;
   min-width: 0;
-  min-height: 100svh;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
