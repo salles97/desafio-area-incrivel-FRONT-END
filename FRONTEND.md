@@ -2,6 +2,9 @@
 
 Interface web (React + Vite) para upload de PDFs, listagem de contratos indexados e chat com respostas em streaming e citação de fontes.
 
+Este repositório é consumido pelo monorepo de orquestração (`desafio-tecnico-AI`), que sobe backend, frontend, Ollama e Qdrant via Docker Compose.
+
+
 ## Desenvolvimento
 
 ```bash
